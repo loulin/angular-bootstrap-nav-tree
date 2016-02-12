@@ -249,9 +249,9 @@
           if (scope.treeControl != null) {
             if (angular.isObject(scope.treeControl)) {
               tree = scope.treeControl;
-              tree.select = function (selection) {
+              tree.select = function (id) {
                 for_each_branch(function(b) {
-                  if (b.label === selection) {
+                  if (b.id === id) {
                     return $timeout(function() {
                       return select_branch(b);
                     });

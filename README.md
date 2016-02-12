@@ -14,3 +14,6 @@ $timeout(function() {
 
 ### Change 2: click on the expand icon will not trigger node selection.
 Only when click on the label should trigger onSelect function, so the ng-click directive is moved to label span.
+
+### Change 3: add branch id as unique node identifier
+And select parameter changed from selection to branch id.
